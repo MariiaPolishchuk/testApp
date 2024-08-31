@@ -1,0 +1,146 @@
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Темное затемнение фона */
+  z-index: 1000;
+  overflow: hidden;
+  backdrop-filter: blur(8px); /* Добавление размытия заднего фона */
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #ffffff, #f7f7f7); /* Светлый градиентный фон */
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Мягкая тень */
+  text-align: center;
+  color: #2c3e50; /* Темный цвет текста для хорошей читаемости */
+}
+
+.modal-body {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #555; /* Темно-серый текст */
+}
+
+.userInput {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 0.9em;
+  font-weight: 600;
+  outline: none;
+  transition: border-color 0.3s ease;
+  /* min-width: 50px; Минимальная ширина инпута */
+
+  display: inline-block;
+}
+
+.userInput:focus {
+  border-color: #007bff;
+}
+
+.userInput.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.userInput.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.button {
+  background-color: #007bff !important; /* Синий цвет для кнопки */
+  color: white;
+  padding: 12px 25px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #0056b3 !important;
+  transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
+}
+
+.audio-correct {
+  color: #27ae60; /* Зеленый цвет для правильного ответа */
+}
+
+.audio-incorrect {
+  color: #e74c3c; /* Красный цвет для неправильного ответа */
+}
+
+.audio-results p {
+  font-size: 1.1em;
+  margin-top: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.audio-results p.correct::before {
+  content: '✓'; /* Галочка */
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.audio-results p.incorrect::before {
+  content: '✗'; /* Крестик */
+  position: absolute;
+  left: 0;
+  color: #e74c3c;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.audio-correct-answer {
+  color: #27ae60; /* Зеленый цвет для выделения правильного ответа */
+  font-weight: bold;
+}
+
+.audio-task h4 {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Стили для кнопок управления */
+.choose-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.incorrect-answer {
+  color: #d6505e; /* Красный цвет для неправильного ответа */
+  font-weight: bold;
+}
+
+.correct-answer {
+  color: #28a746bb; /* Зеленый цвет для правильного ответа */
+  font-weight: bold;
+}
+
+.audio-user-answer {
+  font-weight: bold;
+}

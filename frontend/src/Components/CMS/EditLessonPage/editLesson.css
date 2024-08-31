@@ -1,0 +1,108 @@
+/* Основной контейнер для страницы редактирования урока */
+.edit-lesson-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок страницы */
+.edit-lesson-title {
+  font-size: 2.5em;
+  font-weight: bold !important;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Поля ввода текста */
+.MuiTextField-root {
+  margin-bottom: 20px;
+}
+
+.MuiInputBase-root {
+  font-size: 1.1em;
+}
+
+.MuiFormControl-root {
+  margin-bottom: 20px;
+}
+
+/* Кнопки загрузки файлов */
+.upload-button {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #2980b9;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #3498db;
+}
+
+/* Изображения превью загруженных файлов */
+.uploaded-image {
+  max-width: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Контейнер вкладок */
+.tabs-container {
+  margin-top: 30px;
+}
+
+/* Вкладки */
+.MuiTab-root {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.MuiTabs-indicator {
+  background-color: #2980b9;
+}
+
+/* Контент вкладок */
+.MuiBox-root {
+  margin-top: 20px;
+}
+
+/* Кнопка сохранения */
+.save-button {
+  display: block;
+  width: 100%;
+  background-color: #27ae60;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #2ecc71;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 768px) {
+  .edit-lesson-container {
+    padding: 20px;
+  }
+
+  .edit-lesson-title {
+    font-size: 2em;
+  }
+
+  .save-button {
+    font-size: 1em;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,139 @@
+/* Основные стили для компонента TestForm */
+.test-form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f4f7fb;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.test-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.test-heading {
+  color: #444;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* Стили для списка вопросов */
+.forms {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.test-question {
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  border: 2px solid #ced4da;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.test-question:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.test-question p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.test-question p strong {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.select-opt {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #00aaff;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select-opt:focus {
+  border-color: #008ecc;
+  box-shadow: 0 0 5px rgba(0, 174, 255, 0.5);
+}
+
+/* Стили для правильного и неправильного ответа */
+.result {
+  font-size: 1rem;
+  margin-top: 15px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 25px;
+}
+
+.result.correct {
+  color: #388e3c; /* Приглушенный зеленый */
+}
+
+.result.correct::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #388e3c;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.result.incorrect {
+  color: #d32f2f; /* Приглушенный красный */
+}
+
+.result.incorrect::before {
+  content: '✗';
+  position: absolute;
+  left: 0;
+  color: #d32f2f;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Стили для кнопок */
+.choose-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.lesson-button {
+  flex-grow: 1;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00aaff, #008ecc);
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lesson-button:hover {
+  background: linear-gradient(135deg, #008ecc, #0078b8);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lesson-button:active {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+  

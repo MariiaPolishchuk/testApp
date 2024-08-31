@@ -1,0 +1,321 @@
+#root {
+  width: 100%;
+  margin-top: 95px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo .logo-icon {
+  width: 80px;
+  will-change: filter;
+  transition: filter 300ms;
+  padding: 5px;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #f9f9f9aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.hamburger:hover {
+  filter: drop-shadow(0 0 2em #f9f9f9aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  background: radial-gradient(
+    circle farthest-corner at 100px 50px,
+    #ffffff,
+    #c7c7c7b9
+  );
+  background-attachment: fixed;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.main-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: calc(80vh - 64px);
+  overflow: hidden;
+}
+
+.levels {
+  width: 100%;
+  min-height: calc(85vh - 64px);
+  margin-top: 75px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in-out 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-fast {
+  opacity: 0;
+  animation: fadeIn ease-in-out 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out-fast {
+  opacity: 1;
+  animation: fadeOut ease-in-out 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.button-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choose-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  white-space: nowrap;
+}
+
+.lesson-button {
+  background-color: #010202 !important;
+  margin: 20px !important;
+  color: white !important;
+}
+
+.text {
+  opacity: 0;
+  animation: slideInFromLeft 3s ease-in-out forwards;
+  font-weight: 500;
+}
+
+.fast-text {
+  opacity: 0;
+  animation: slideInFromLeft 0.5s ease-in-out forwards;
+  font-weight: 500;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.home-intro {
+  color: #e4eaea;
+  text-shadow: 1px 1px 2px #062c36;
+}
+
+.image-container {
+  max-width: 700px;
+}
+
+.thumbs-wrapper {
+  margin: 0 !important;
+}
+
+.carousel {
+  margin-top: 40px;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+/* .carousel-lessons {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  z-index: 999;
+  text-shadow: 0 0 20px #fff !important;
+  color: #090909e3;
+} */
+.carousel-size {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel .carousel-status {
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: #cce7e8;
+  font-weight: 800;
+}
+
+/* h3 {
+  background: radial-gradient(
+    circle farthest-corner at 100px 50px,
+    #94c8cb5e,
+    #1597a766
+  );
+  padding: 20px;
+  border-radius: 5px;
+  color: #083643;
+  font-weight: 900;
+  margin: 0;
+  text-shadow: 2px 2px 2px #08364352 !important;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+} */
+/* 
+h4 {
+  padding: 20px;
+  margin-top: 0;
+  text-shadow: 2px 2px 2px #08364352;
+  border-radius: 8px;
+  background: radial-gradient(
+    circle farthest-corner at 100px 50px,
+    #94c8cb3d,
+    #1597a757
+  );
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+} */
+
+
+@media (max-width: 1250px) {
+}
+
+@media (max-width: 796px) {
+  .main-content {
+    padding: 130px 20px;
+    min-height: calc(60vh - 64px);
+  }
+
+  .home-intro {
+    padding: 0 10px;
+  }
+  .carousel-lessons {
+    position: absolute;
+    left: 2%;
+    text-shadow: 0 0 4px #020a0c;
+    color: #dde2e4;
+    top: 0%;
+    z-index: 999;
+
+  }
+
+  .levels {
+    width: unset;
+    margin-top: 68px;
+  }
+}
+
+.square {
+  /* background-color: rgba(0, 0, 0, 0.5);
+  color: white; */
+  background-color: #00000033;
+  /* width: 500px; */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.img-buy {
+  width: 70px;
+  height: 70px;
+  margin-top: 40px;
+  box-shadow: 0 0 7px #666;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.icons {
+  display: flex;
+  text-align: center;
+  padding: 73px;
+  gap: 10px;
+}
+
+.imgLessonDescr {
+  max-width: 870px;
+  width: 100%;
+}
+
+
+.css-1gsv261 {
+  border-bottom: 0 !important;
+}

@@ -1,0 +1,168 @@
+.synonyms-cont {
+    background-color: #f4f7fb;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    /* font-family: 'Roboto', sans-serif; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.synonyms-cont:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Заголовок блока */
+.block-name h4 {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 25px;
+    /* text-align: center; */
+    /* letter-spacing: 1.2px; */
+}
+
+/* Контейнер для двух колонок */
+.word-synonyms-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+    align-items: start;
+}
+
+/* Колонки для списка слов и синонимов */
+.word-list-container,
+.synonyms-list-container {
+    background: linear-gradient(135deg, #ffffff, #f0f4f8);
+    border-radius: 16px;
+    padding: 25px;
+    border: 2px solid #e1e6eb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.word-list-container:hover,
+.synonyms-list-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    background-color: #eef2f7;
+}
+
+/* Стили для списка слов и синонимов */
+.word-list,
+.synonyms-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Стили для неподвижных элементов списка */
+.word-list .list-item {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border: 2px solid #dee2e6;
+    border-radius: 16px;
+    padding: 15px 20px;
+    color: #495057;
+    font-weight: bold;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.word-list .list-item:hover {
+    background-color: #f1f3f5;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Стили для перемещаемых элементов списка */
+.synonyms-list .list-item {
+    background: linear-gradient(135deg, #ffffff, #e0f7ff);
+    border: 2px solid #00aaff;
+    border-radius: 16px;
+    padding: 15px 20px;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: grab;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+.synonyms-list .list-item:hover {
+    background-color: #ccf2ff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: #008ecc;
+}
+
+/* Overlay для правильных и неправильных ответов */
+.synonyms-list .list-item.correct-answer::before {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.synonyms-list .list-item.incorrect-answer::before {
+    content: '✗';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Кнопки */
+.choose-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.button {
+    flex-grow: 1;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00aaff, #008ecc);
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #008ecc, #0078b8);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+  

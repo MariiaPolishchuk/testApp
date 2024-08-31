@@ -1,0 +1,114 @@
+/* .lesson-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1f2937;
+  padding: 20px;
+}
+
+.lesson-details-content {
+  display: flex;
+  background-color: #374151;
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.lesson-image-container {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lesson-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 16px 0 0 16px;
+}
+
+.lesson-image-container:hover .lesson-image {
+  transform: scale(1.05);
+}
+
+.lesson-text-container {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.lesson-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+.lesson-description {
+  font-size: 1.125rem;
+  color: #cbd5e0;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-align: center;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out forwards 0.2s;
+}
+
+.start-button-user {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-in-out forwards 0.4s;
+  align-self: center;
+}
+
+.start-button-user:hover {
+  background-color: #2563eb;
+  transform: translateY(-3px);
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.lesson-loading {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 50px;
+} */
+
+
+

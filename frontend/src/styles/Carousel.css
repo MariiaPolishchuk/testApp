@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Обертка для карусели */
+.slick-slider {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Контейнер для слайдов */
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* Слайд */
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+/* Активный слайд */
+.slick-slide.slick-active {
+  display: block;
+}
+
+/* Кнопки для навигации (если используются) */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: block;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  border: none;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+/* Точки для индикатора текущего слайда */
+.slick-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Центрирование точек */
+  align-items: center; /* Выравнивание точек по вертикали */
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+*/
+  
+  /* Активная точка */
+  .slick-dots li.slick-active button {
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 905px) {
+  .slick-slider {
+    position: relative !important;
+  }
+}

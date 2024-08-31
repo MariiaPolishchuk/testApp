@@ -1,0 +1,152 @@
+/* Основной контейнер для текста */
+.reading-text-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Легкая прозрачность для фона */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Легкая тень для выделения */
+  line-height: 1.6;
+  color: #1f2937; /* Темный цвет текста */
+}
+
+.reading-text-container h4 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Центрирование и стилизация кнопки "Start Speaking" */
+.start-speaking-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.start-speaking-button {
+  background-color: #007acc;
+  color: white;
+  padding: 16px 32px; /* Увеличенные отступы для большего размера */
+  border-radius: 12px; /* Более округлые края */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.2rem; /* Увеличенный размер шрифта */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Добавлена тень для кнопки */
+}
+
+.start-speaking-button:hover {
+  background-color: #005fa3;
+  transform: translateY(-4px); /* Более заметное поднятие кнопки при наведении */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Усиление тени при наведении */
+}
+
+/* Стили для тултипа */
+.tooltip {
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* Дополнительные стили для стрелки тултипа */
+.MuiTooltip-arrow {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/* Основной стиль для модального окна */
+.modal-box {
+  position: relative;
+  width: 400px;
+  max-width: 90%;
+  background-color: #ffffff;
+  padding: 30px;
+  margin: auto;
+  margin-top: 20vh;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeInScale 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+/* Анимация появления модального окна с увеличением */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Фон модального окна */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+}
+
+/* Заголовок модального окна */
+.modal-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1f2937;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Текст внутри модального окна */
+.modal-box p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Кнопка для следующего вопроса */
+.modal-box .MuiButton-containedSecondary {
+  background-color: #007acc;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-right: 10px;
+}
+
+.modal-box .MuiButton-containedSecondary:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* Кнопка для закрытия модального окна */
+.modal-box .MuiButton-outlinedPrimary {
+  color: #007acc;
+  border-color: #007acc;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-box .MuiButton-outlinedPrimary:hover {
+  color: #005fa3;
+  border-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+
+/* Анимация появления модального окна */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

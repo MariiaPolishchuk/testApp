@@ -1,0 +1,12 @@
+.tooltip-lessson {
+    font-size: 10px !important;
+    max-height: 700px !important;
+    overflow-y: auto !important;
+}
+
+.start-lesson {
+    margin-left: 0;
+}
+
+
+

@@ -1,0 +1,290 @@
+.vocabulary-section-cms {
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.vocabulary-section-cms h4 {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 600;
+}
+
+.vocabulary-section-cms .form-group {
+  margin-bottom: 20px;
+}
+
+.vocabulary-section-cms .form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.vocabulary-section-cms .form-group input[type="text"],
+.vocabulary-section-cms .form-group select {
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #34495e;
+  background-color: #ecf0f1;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.vocabulary-section-cms .form-group input[type="text"]:focus,
+.vocabulary-section-cms .form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.vocabulary-section-cms button[type="button"],
+.vocabulary-section-cms .MuiButton-root {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 0.95em;
+  font-weight: 700;
+}
+
+.vocabulary-section-cms button[type="button"]:hover,
+.vocabulary-section-cms .MuiButton-root:hover {
+  background: #3498db;
+  transform: translateY(-3px);
+}
+
+.vocabulary-section-cms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vocabulary-section-cms ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #dfe6e9;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+.vocabulary-section-cms ul li:hover {
+  background-color: #e0e0e0;
+}
+
+.vocabulary-section-cms ul li .MuiIconButton-root {
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+
+/* Цвет кнопок редактирования и удаления */
+.vocabulary-section-cms ul li .MuiIconButton-root.edit-button {
+  color: #2980b9 !important;
+}
+
+.vocabulary-section-cms ul li .MuiIconButton-root.delete-button {
+  color: #e74c3c !important;
+}
+
+.vocabulary-section-cms ul li .MuiIconButton-root.edit-button:hover {
+  color: #1a6a99 !important;
+}
+
+.vocabulary-section-cms ul li .MuiIconButton-root.delete-button:hover {
+  color: #c0392b !important;
+}
+
+.vocabulary-section-cms ul li:last-child {
+  margin-bottom: 0;
+}
+
+.vocabulary-section-cms ul li span {
+  flex-grow: 1;
+  margin: 0 20px;
+  color: #2c3e50;
+}
+
+.vocabulary-section-cms .form-group h5 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Стили для секций синонимов и тестовых вопросов */
+.synonyms-cms,
+.test-questions-cms {
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.synonyms-cms h5,
+.test-questions-cms h5 {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-align: center;
+  font-weight: 600;
+}
+
+.synonyms-cms .form-group,
+.test-questions-cms .form-group {
+  margin-bottom: 20px;
+}
+
+.synonyms-cms .form-group label,
+.test-questions-cms .form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.synonyms-cms .form-group input[type="text"],
+.test-questions-cms .form-group input[type="text"],
+.test-questions-cms .form-group select {
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #34495e;
+  background-color: #ecf0f1;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.synonyms-cms .form-group input[type="text"]:focus,
+.test-questions-cms .form-group input[type="text"]:focus,
+.test-questions-cms .form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.synonyms-cms button[type="button"],
+.test-questions-cms button[type="button"],
+.synonyms-cms .MuiButton-root,
+.test-questions-cms .MuiButton-root {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 0.95em;
+}
+
+.synonyms-cms button[type="button"]:hover,
+.test-questions-cms button[type="button"]:hover,
+.synonyms-cms .MuiButton-root:hover,
+.test-questions-cms .MuiButton-root:hover {
+  background: #3498db;
+  transform: translateY(-3px);
+}
+
+.synonyms-cms ul,
+.test-questions-cms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.synonyms-cms ul li,
+.test-questions-cms ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #dfe6e9;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
+
+.synonyms-cms ul li:hover,
+.test-questions-cms ul li:hover {
+  background-color: #e0e0e0;
+}
+
+.synonyms-cms ul li .MuiIconButton-root,
+.test-questions-cms ul li .MuiIconButton-root {
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 8px;
+  transition: color 0.3s ease;
+}
+
+/* Цвет кнопок редактирования и удаления для секций Synonyms и Test Questions */
+.synonyms-cms ul li .MuiIconButton-root.edit-button,
+.test-questions-cms ul li .MuiIconButton-root.edit-button {
+  color: #2980b9 !important;
+}
+
+.synonyms-cms ul li .MuiIconButton-root.delete-button,
+.test-questions-cms ul li .MuiIconButton-root.delete-button {
+  color: #e74c3c !important;
+}
+
+.synonyms-cms ul li .MuiIconButton-root.edit-button:hover,
+.test-questions-cms ul li .MuiIconButton-root.edit-button:hover {
+  color: #1a6a99;
+}
+
+.synonyms-cms ul li .MuiIconButton-root.delete-button:hover,
+.test-questions-cms ul li .MuiIconButton-root.delete-button:hover {
+  color: #c0392b;
+}
+
+.synonyms-cms ul li:last-child,
+.test-questions-cms ul li:last-child {
+  margin-bottom: 0;
+}
+
+.synonyms-cms ul li span,
+.test-questions-cms ul li span {
+  flex-grow: 1;
+  margin-right: 15px;
+  color: #2c3e50;
+  padding-left: 10px;
+}
+
+.synonyms-cms .form-group h5,
+.test-questions-cms .form-group h5 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.test-questions-cms .form-group select {
+  width: 100%;
+  margin-top: 12px;
+}

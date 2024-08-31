@@ -1,0 +1,158 @@
+/* Home.css */
+
+.start-button {
+  background-color: #000000 !important;
+  margin: 20px 0 !important;
+  border-radius: 25px !important;
+}
+.start-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+.carousel-lessons {
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  z-index: 999;
+  text-shadow: 0 0 20px #fff !important;
+  color: #090909e3;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  min-height: calc(109vh - 64px);
+}
+
+.home-intro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Помещаем текст над изображением */
+}
+
+.text-column {
+  max-width: 900px;
+  margin-top: 150px;
+  margin-left: 30px;
+}
+
+.text-intro {
+  font-size: 24px;
+  display: flex;
+  margin-left: 45px;
+  padding: 10px;
+  margin-bottom: 0;
+  margin-top: 106px;
+}
+
+.home-intro .text {
+  font-size: xxx-large;
+  text-align: unset;
+}
+
+.text-intro-p {
+  margin-left: 55px !important;
+  margin: 0;
+  font-size: x-large;
+}
+
+.start-test {
+  margin-bottom: 20px;
+  margin: 0 60px;
+  display: flex;
+  padding: 5px 50px;
+}
+
+/* Стили для кнопки */
+.start-test Button {
+  color: white;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.start-test Button:hover {
+  background-color: #0056b3;
+}
+
+.lesson-descr {
+  min-height: calc(80vh - 64px);
+  justify-content: center;
+}
+
+@media (max-width: 905px) {
+  .logo-icon {
+    width: 50px;
+  }
+  .text-column {
+    margin: 0 20px;
+  }
+  .text-intro {
+    margin-left: 0;
+  }
+  .start-test {
+    margin: 0;
+    padding: 25px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .home-img {
+    width: 1142px !important;
+    display: flex;
+    right: 243px;
+    position: relative;
+  }
+  .home-intro .text {
+    font-size: xx-large;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .text-intro-p {
+    margin-left: 0 !important;
+    margin: 0;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 796px) {
+  .carousel-lessons {
+    position: absolute;
+    /* left: 20px; */
+    font-size: small;
+    text-shadow: 0 0 4px #020a0c;
+    color: #dde2e4;
+    /* top: 0%; */
+    z-index: 999;
+  }
+  .img-container {
+    text-align: center;
+  }
+}

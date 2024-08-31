@@ -1,0 +1,38 @@
+.lesson-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Основные стили кнопок пагинации */
+.lesson-pagination button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1em;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Стиль активной кнопки */
+.lesson-pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+/* Эффект при наведении */
+.lesson-pagination button:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Отступы между кнопками и их выравнивание */
+.lesson-pagination button:not(:last-child) {
+  margin-right: 5px;
+}

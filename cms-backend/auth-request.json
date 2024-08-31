@@ -1,0 +1,7 @@
+{
+    "grant_type": "client_credentials",
+    "client_id": "N8QS8WSo07Cp5FaLkb3ozcWMNfAB0GZC",
+    "client_secret": "f5R8MkmSG8vUxzQSgu-Rj7rRJRxhnIKKr9SKDiDs9bhpnGpJibnp42lAZuOCkTAi",
+    "audience": "https://dev-1350zgmjlyi7iils.us.auth0.com/api/v2/"
+  }
+  
